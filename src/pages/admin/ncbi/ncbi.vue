@@ -61,8 +61,8 @@
     return bkClient
       .get('trend', { params: { disease: disease.value, min_yr: years.value[0], max_yr: years.value[1] } })
       .then((res) => {
-        const data = res.data.map((d) => d.nPub)
-        const range = res.data.map((d) => d.year)
+        const data = res.data.map((d: any) => d.nPub)
+        const range = res.data.map((d: any) => d.year)
         const label = `Number of publications mentioning ${disease.value}`
         lineChartDataGenerated.value = {
           datasets: [{ label: label, backgroundColor: 'hsla(220,80%,42%,0.7)', data: data }],
