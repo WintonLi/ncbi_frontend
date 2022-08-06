@@ -14,7 +14,7 @@ export function useChartData<T extends TChartData>(data: T, alfa?: number): Comp
       ...dataset,
       backgroundColor: datasetsThemesColors[idx].value,
     }))
-
+    console.log({ ...data, datasets })
     return { ...data, datasets } as T
   })
 }
