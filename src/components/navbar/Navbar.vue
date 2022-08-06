@@ -23,7 +23,6 @@
   import { useColors } from 'vuestic-ui'
   import VaIconMenuCollapsed from '../icons/VaIconMenuCollapsed.vue'
 
-
   const GlobalStore = useGlobalStore()
   const { t } = useI18n()
 

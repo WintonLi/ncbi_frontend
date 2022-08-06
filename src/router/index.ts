@@ -2,7 +2,6 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import AppLayout from '../layouts/AppLayout.vue'
 import Page404Layout from '../layouts/Page404Layout.vue'
 
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/:catchAll(.*)',
